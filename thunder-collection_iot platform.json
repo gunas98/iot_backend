@@ -1,0 +1,283 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "iot platform",
+    "dateExported": "2023-05-04T08:43:33.709Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "70268841-bb40-4d21-815a-276d55ae8f5a",
+            "colId": "0da0769e-462c-4aca-9bb6-6fb8a4d485c2",
+            "containerId": "",
+            "name": "create widgettype",
+            "url": "http://localhost:3500/widgettype",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-05-02T06:58:32.949Z",
+            "modified": "2023-05-02T07:01:28.961Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"widgettypeid\": \"GRAPH LINE\",\n    \"widgettypename\": \"Line Graph\",\n    \"datatype\":\"D\"\n}\n\n",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "0ef44041-acd3-4dbe-9697-0c073ce882a2",
+            "colId": "0da0769e-462c-4aca-9bb6-6fb8a4d485c2",
+            "containerId": "",
+            "name": "create user",
+            "url": "http://localhost:3500/user",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2023-05-02T07:07:29.241Z",
+            "modified": "2023-05-02T07:31:03.264Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"userid\": \"DAVID\",\n    \"email\": \"david@gmail.com\",\n    \"username\":\"David Ivan\",\n    \"role\": \"U\",\n    \"password\": \"123456\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "50f8f2f9-713f-4e9e-9c04-baee0b64f9cb",
+            "colId": "0da0769e-462c-4aca-9bb6-6fb8a4d485c2",
+            "containerId": "",
+            "name": "create device",
+            "url": "http://localhost:3500/device",
+            "method": "POST",
+            "sortNum": 20625,
+            "created": "2023-05-02T07:46:14.040Z",
+            "modified": "2023-05-02T07:50:28.221Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"password\": \"123456\",\n    \"devname\": \"Device 01\",\n    \"devtype\":\"ESP8266\",\n    \"devmodel\": \"Lolin ESP8266 R1\",\n    \"ssid\": \"aldebaran\",\n    \"wifipass\": \"bintangkejora\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "629149a5-58a4-497a-81a5-65ddab7fd3c7",
+            "colId": "0da0769e-462c-4aca-9bb6-6fb8a4d485c2",
+            "containerId": "",
+            "name": "create dashboard",
+            "url": "http://localhost:3500/dashboard",
+            "method": "POST",
+            "sortNum": 20937.5,
+            "created": "2023-05-02T08:03:54.560Z",
+            "modified": "2023-05-02T08:06:23.393Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"dashboardid\": \"DB001\",\n    \"projectid\": \"P0001\",\n    \"dashboardtitle\":\"Solar Output Monitor\",\n    \"dashboarddesc\": \"Dashboard Monitoring u/ Solar Panel\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "5a5365b4-e094-4265-a386-4829fbfd512a",
+            "colId": "0da0769e-462c-4aca-9bb6-6fb8a4d485c2",
+            "containerId": "",
+            "name": "create dashboard device",
+            "url": "http://localhost:3500/dashdevice",
+            "method": "POST",
+            "sortNum": 21093.8,
+            "created": "2023-05-02T08:17:01.674Z",
+            "modified": "2023-05-02T08:19:34.706Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"dashboardid\": \"DB001\",\n    \"devid\": \"4CI0hWF3F7DlABG\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "f87f93fd-43d5-47e4-9570-ed5228bab4c9",
+            "colId": "0da0769e-462c-4aca-9bb6-6fb8a4d485c2",
+            "containerId": "",
+            "name": "create device var",
+            "url": "http://localhost:3500/devicevar",
+            "method": "POST",
+            "sortNum": 21250,
+            "created": "2023-05-02T07:44:49.449Z",
+            "modified": "2023-05-03T02:38:59.052Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"devid\": \"4CI0hWF3F7DlABG\",\n    \"varname\": \"nVolt\",\n    \"vartype\":\"D\",\n    \"varaccess\": \"R\",\n    \"schedid\": \"P5S\",\n    \"varformula\": \"\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "95ba0d9a-1636-492b-9e04-facfa333eabb",
+            "colId": "0da0769e-462c-4aca-9bb6-6fb8a4d485c2",
+            "containerId": "",
+            "name": "create dashwidget",
+            "url": "http://localhost:3500/dashwidget",
+            "method": "POST",
+            "sortNum": 21875,
+            "created": "2023-05-02T08:29:10.776Z",
+            "modified": "2023-05-02T08:39:27.599Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"dashboardid\": \"DB001\",\n    \"widgettypeid\": \"GRAPH BAR\",\n    \"varid\":\"k238cEIjPSzfV2M\",\n    \"title\": \"Voltage Output\",\n    \"posx1\": 0,\n    \"posy1\": 0,\n    \"posx2\": 100,\n    \"posy2\": 100,\n    \"textcolor\": \"#FFFFFF\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "95f52c0a-7c30-4bad-bd39-56f4803cbf21",
+            "colId": "0da0769e-462c-4aca-9bb6-6fb8a4d485c2",
+            "containerId": "",
+            "name": "create project",
+            "url": "http://localhost:3500/project",
+            "method": "POST",
+            "sortNum": 22500,
+            "created": "2023-05-02T07:39:39.454Z",
+            "modified": "2023-05-02T07:42:39.240Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"projectid\": \"P0001\",\n    \"userid\": \"GUNAWAN98\",\n    \"projectname\":\"Solar monitoring v1.0\",\n    \"projectdesc\": \"Project untuk memonitor hasil produksi panel surya\"\n}\n",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "41501fc8-394d-444c-a7e8-0dfef4425e8b",
+            "colId": "0da0769e-462c-4aca-9bb6-6fb8a4d485c2",
+            "containerId": "",
+            "name": "create schedule",
+            "url": "http://localhost:3500/schedule",
+            "method": "POST",
+            "sortNum": 25000,
+            "created": "2023-05-02T07:32:51.451Z",
+            "modified": "2023-05-02T07:34:25.126Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"schedid\": \"P5S\",\n    \"schedtype\": \"P\",\n    \"schedtime\":5.0\n}\n",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "3e5a6285-b3e8-4b17-a3c6-e442796598d6",
+            "colId": "0da0769e-462c-4aca-9bb6-6fb8a4d485c2",
+            "containerId": "",
+            "name": "create iotdata",
+            "url": "http://localhost:3500/iotdata",
+            "method": "POST",
+            "sortNum": 35000,
+            "created": "2023-05-03T02:35:23.827Z",
+            "modified": "2023-05-03T08:13:45.944Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "[\n  {\n    \"varid\": \"k238cEIjPSzfV2M\",\n    \"devtime\": \"2023-05-03 09:58:00\",\n    \"dvalue\": 0,\n    \"ivalue\": 1\n  },\n  {\n    \"varid\": \"laMh8x21RYcwHlm\",\n    \"devtime\": \"2023-05-03 09:58:00\",\n    \"dvalue\": 0,\n    \"ivalue\": 0\n  },\n  {\n    \"varid\": \"QatmRAUG4PT5rXA\",\n    \"devtime\": \"2023-05-03 09:58:00\",\n    \"dvalue\": 0,\n    \"ivalue\": 75\n  },\n  {\n    \"varid\": \"aP3tqFDiaYFhpJ4\",\n    \"devtime\": \"2023-05-03 09:58:00\",\n    \"dvalue\": 255.25,\n    \"ivalue\": 0\n  }\n]",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "1d644ec0-753b-41d5-bce5-e556fda84174",
+            "colId": "0da0769e-462c-4aca-9bb6-6fb8a4d485c2",
+            "containerId": "",
+            "name": "create iotdata Copy",
+            "url": "http://localhost:3500/coba3/",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2023-05-03T07:26:45.746Z",
+            "modified": "2023-05-03T07:32:27.266Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "[\n  {\n    \"varid\": \"k238cEIjPSzfV2M\",\n    \"devid\": \"4CI0hWF3F7DlABG\",\n    \"varname\": \"nLamp01\",\n    \"vartype\": \"B\",\n    \"varaccess\": \"R\",\n    \"schedid\": \"P5S\",\n    \"varformula\": \"\",\n    \"lastaccess\": null\n  },\n  {\n    \"varid\": \"laMh8x21RYcwHlm\",\n    \"devid\": \"4CI0hWF3F7DlABG\",\n    \"varname\": \"nLamp02\",\n    \"vartype\": \"B\",\n    \"varaccess\": \"R\",\n    \"schedid\": \"P5S\",\n    \"varformula\": \"\",\n    \"lastaccess\": null\n  },\n  {\n    \"varid\": \"QatmRAUG4PT5rXA\",\n    \"devid\": \"4CI0hWF3F7DlABG\",\n    \"varname\": \"nTemp\",\n    \"vartype\": \"I\",\n    \"varaccess\": \"R\",\n    \"schedid\": \"P5S\",\n    \"varformula\": \"\",\n    \"lastaccess\": null\n  },\n  {\n    \"varid\": \"aP3tqFDiaYFhpJ4\",\n    \"devid\": \"4CI0hWF3F7DlABG\",\n    \"varname\": \"nVolt\",\n    \"vartype\": \"D\",\n    \"varaccess\": \"R\",\n    \"schedid\": \"P5S\",\n    \"varformula\": \"\",\n    \"lastaccess\": null\n  }\n]",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "f3bf8ec4-0067-4967-885c-0e15b397732a",
+            "colId": "0da0769e-462c-4aca-9bb6-6fb8a4d485c2",
+            "containerId": "",
+            "name": "get devicevar by devid",
+            "url": "http://localhost:3500/coba3/4CI0hWF3F7DlABG",
+            "method": "GET",
+            "sortNum": 45000,
+            "created": "2023-05-03T03:32:40.676Z",
+            "modified": "2023-05-03T07:28:22.251Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "75ac86e0-a7d7-4d50-bda3-ff2b668fe39c",
+            "colId": "0da0769e-462c-4aca-9bb6-6fb8a4d485c2",
+            "containerId": "",
+            "name": "get devicevar ",
+            "url": "http://localhost:3500/devicevar",
+            "method": "GET",
+            "sortNum": 47500,
+            "created": "2023-05-04T08:18:06.055Z",
+            "modified": "2023-05-04T08:39:04.393Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkZXZpZCI6IjRDSTBoV0YzRjdEbEFCRyIsImlhdCI6MTY4MzE4OTUzMiwiZXhwIjoxNjgzMTg5NTYyfQ.ajX-_sPNb_kjvA2ooYogYtb7uczG-f4nVsCw_avyf7g"
+            },
+            "tests": []
+        },
+        {
+            "_id": "c85e7316-fd67-40ec-b53c-e65f05ebd8ff",
+            "colId": "0da0769e-462c-4aca-9bb6-6fb8a4d485c2",
+            "containerId": "",
+            "name": "get device",
+            "url": "http://localhost:3500/device",
+            "method": "GET",
+            "sortNum": 50000,
+            "created": "2023-05-04T08:15:08.451Z",
+            "modified": "2023-05-04T08:15:42.114Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "909487e4-9d57-45b4-9cbf-986861be9b05",
+            "colId": "0da0769e-462c-4aca-9bb6-6fb8a4d485c2",
+            "containerId": "",
+            "name": "authenticate",
+            "url": "http://localhost:3500/auth",
+            "method": "POST",
+            "sortNum": 55000,
+            "created": "2023-05-04T06:37:41.362Z",
+            "modified": "2023-05-04T06:37:41.362Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"devid\": \"4CI0hWF3F7DlABG\",\n    \"devpwd\":\"123456\"\n}\n\n",
+                "form": []
+            },
+            "tests": []
+        }
+    ]
+}
