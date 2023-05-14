@@ -37,7 +37,7 @@ const createProject = async (req, res) => {
       if (error) {
         handleQueryError(error, req, res);
       } else {
-        res.status(201).json({ 'message': 'tersimpan'  });
+        res.sendStatus(201);
       }
     }
   );
@@ -52,7 +52,7 @@ const updateProject = async (req, res) => {
       if (error) { 
         handleQueryError(error, req, res);   
       } else {
-        res.status(200).json({ 'message': 'terbarui' });
+        res.sendStatus(200);
       }
     }
   );    
@@ -66,7 +66,7 @@ const deleteProject = async (req, res) => {
       if (error) { 
         handleQueryError(error, req, res); 
       } else {
-        res.status(200).json({ 'message': 'terhapus' });
+        res.sendStatus(200);
       }
     }
   );

@@ -38,7 +38,7 @@ const createIotdata = async (req, res) => {
         if (error) {
           handleQueryError(error, req, res); 
         } else {
-          res.status(201).json({ 'mesage': 'tersimpan'  });
+          res.sendStatus(201);
         } 
       }
     );

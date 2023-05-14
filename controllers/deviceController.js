@@ -81,7 +81,8 @@ const updateDevice = async (req, res) => {
       if (error) { 
         handleQueryError(error, req, res);   
       } else {
-        res.status(200).json({ 'message': 'terbarui' });
+        res.sendStatus(200);
+        res.st
       }
     }
   );
@@ -116,7 +117,7 @@ const deleteDevice = async (req, res) => {
       if (error) { 
         handleQueryError(error, req, res); 
       } else {
-        res.status(200).json({ 'message': 'terhapus' });
+          res.sendStatus(200);
       }
     }
   );

@@ -52,7 +52,7 @@ const createNewDeviceVar = async (req, res) => {
             if (error) { 
                 handleQueryError(error, req, res);  
             } else {
-                res.status(201).json({ 'message': `tersimpan`  });
+                res.status(201).json({ 'varid': varid});
             }
         }
     );
@@ -67,7 +67,7 @@ const updateDeviceVar = async (req, res) => {
             if (error) { 
                 handleQueryError(error, req, res);  
             } else {
-                res.status(200).json({ 'message': 'terbarui' });
+                res.sendStatus(200);
             }
         }
     );
@@ -81,7 +81,7 @@ const deleteDeviceVar = async (req, res) => {
             if (error) { 
                 handleQueryError(error, req, res);  
             } else {
-                res.status(200).json({ 'message': 'terhapus' });
+                res.sendStatus(200);
             }
         }
     );

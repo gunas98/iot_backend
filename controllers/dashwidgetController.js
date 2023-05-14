@@ -41,7 +41,7 @@ const createDashwidget = async (req, res) => {
                                 if (error) {
                                     handleQueryError(error, req, res); 
                                 } else {
-                                    res.status(201).json({ 'widgetid': widgetid, 'message':'tersimpan'  });
+                                    res.status(201).json({ 'widgetid': widgetid});
                                 }
                             }
     );
@@ -56,7 +56,7 @@ const updateDashwidget = async (req, res) => {
             if (error) { 
                 handleQueryError(error, req, res);   
             } else {
-                res.status(200).json({ 'message': 'terbarui' });
+                res.sendStatus(200);
             }
         }
     );
@@ -70,7 +70,7 @@ const deleteDashwidget = async (req, res) => {
             if (error) { 
                 handleQueryError(error, req, res); 
             } else {
-                res.status(200).json({ 'message': 'terhapus' });
+                res.sendStatus(200);
             }
         }
     );

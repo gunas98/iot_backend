@@ -37,7 +37,7 @@ const createDashboard = async (req, res) => {
       if (error) {
         handleQueryError(error, req, res); 
       } else {
-        res.status(201).json({ 'message': 'tersimpan'  });
+        res.sendStatus(201);
       }
     }
   ); 
@@ -52,7 +52,7 @@ const updateDashboard = async (req, res) => {
       if (error) { 
         handleQueryError(error, req, res);   
       } else {
-        res.status(200).json({ 'message': 'terbarui' });
+        res.sendStatus(200);
       }
     }
   );
@@ -66,7 +66,7 @@ const deleteDashboard = async (req, res) => {
       if (error) { 
         handleQueryError(error, req, res); 
       } else {
-        res.status(200).json({ 'message': 'terhapus' });
+        res.sendStatus(200);
       }
     }
 
